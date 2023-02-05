@@ -1,0 +1,75 @@
+/* Selectores */
+
+/* 
+    Selectores Simples
+
+        Selectores elementales
+
+            selector universal =>  * (selecciona todo, se debe de usar con mucho cuidado y solo se utiliza en momentos concretos)
+
+            selector de tipo o etiqueta => nombre de la etiqueta  (simplemente poner el nombre de la etiqueta)
+
+
+        Selectores de atributo
+
+            id => id del elemento (# se usa el símbolo de (hash, numeral, michi) mas el nombre del id, los selectores de id son keysentitive "se deben de escribir siempre en minúscula" y no es recomendable dar estilo con id porque son identificadores   ejem:  #title)
+
+            clase => clase del elemento (son keysentitive,  se debe de agregar primero el "." después el nombre de la clase ejem:  .párrafo1, y no tiene limite de numero de clases )
+
+            Otros Atributos
+
+             [atributo]  selecciona todos los atributos que contengan en las etiquetas html. ejem: 
+             
+             [href]{
+                background-color:green;
+            }
+            
+            [atributo=valor]
+            ejem:[href="https://www.google.com/"] {
+                background-color: black;
+            }
+            
+            [atributo^=valor]  comprueba si el atributo empieza por ese valor ejem: 
+            [href^="color"]{
+                background-color:red;
+            }
+            
+            [atributo*=valor] selecciona el valor que coincida independiente de donde este (sobrescribe la cascada y selecciona el valor sin importar si es la segunda palabra del valor)
+            
+            [atributo$=valor] selecciona el valor si termina por esa palabra
+            
+            [atributo|=valor] se usa para el idioma
+
+    Selectores Compuestos
+        Selectores Agrupados
+        Selectores Combinados
+        Pseudoclases - Pseudoelementos
+*/
+
+
+/* selecciona todos los atributos que contengan href */
+[href] {
+    background-color: rgb(98, 116, 161);
+}
+
+[href="https://www.google.com/"] {
+    background-color: orangered;
+}
+
+/* comprueba si el atributo empieza por ese valor */
+[href^="color"] {
+    background-color: red;
+}
+
+/* selecciona el valor que coincida independiente de donde este (sobrescribe la cascada y selecciona el valor sin importar si es la segunda palabra del valor) */
+[href*="modo"] {
+    background-color: green;
+}
+
+[href$="azul"] {
+    background-color: steelblue;
+}
+
+[lang|="en"] {
+    background-color: magenta;
+}
