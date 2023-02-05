@@ -1,0 +1,14 @@
+/* 
+- Selector: es un elemento al que vamos a aplicar estilos
+- propiedad: lo que vamos a cambiar
+- Valor: el nuevo valor que le vamos a dar a la propiedad
+- propiedad: Valor -> se le denomina declaración al conjunto de selector + declaración(es) se le denomina regla
+*/
+
+/* sintaxis */
+/* no tiene limites de propiedad y valor */
+/* selector {
+    propiedad: valor;
+    propiedad: valor;
+    propiedad: valor;
+} */
