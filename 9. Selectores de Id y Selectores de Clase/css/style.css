@@ -1,0 +1,42 @@
+/* Selectores */
+
+/* 
+    Selectores Simples
+
+        Selectores elementales
+
+            selector universal =>  * (selecciona todo, se debe de usar con mucho cuidado y solo se utiliza en momentos concretos)
+
+            selector de tipo o etiqueta => nombre de la etiqueta  (simplemente poner el nombre de la etiqueta)
+
+
+        Selectores de atributo
+
+            id => id del elemento (# se usa el símbolo de (hash, numeral, michi) mas el nombre del id, los selectores de id son keysentitive "se deben de escribir siempre en minúscula" y no es recomendable dar estilo con id porque son identificadores   ejem:  #title)
+
+            clase => clase del elemento (son keysentitive,  se debe de agregar primero el "." después el nombre de la clase ejem:  .párrafo1, y no tiene limite de numero de clases )
+
+    Selectores Compuestos
+        Selectores Agrupados
+        Selectores Combinados
+        Pseudoclases - Pseudoelementos
+*/
+
+
+
+/* selector de Id */
+#Title {
+    background-color: lightgreen;
+}
+
+
+/* Selector de clase */
+
+.titulo {
+    background-color: lightsalmon;
+}
+
+/* selecciona todos los elementos que tienen la clase texto */
+.texto {
+    background-color: lightgreen;
+}
