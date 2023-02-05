@@ -1,0 +1,45 @@
+/* Selectores */
+
+/* 
+    Selectores Simples
+
+        Selectores elementales
+            selector universal =>  * (selecciona todo, se debe de usar con mucho cuidado y solo se utiliza en momentos concretos)
+
+        selector de tipo o etiqueta => nombre de la etiqueta  (simplemente poner el nombre de la etiqueta)
+
+
+        Selectores de atributo
+
+    Selectores Compuestos
+        Selectores Agrupados
+        Selectores Combinados
+        Pseudoclases - Pseudoelementos
+*/
+
+
+
+/* Selector Universal */
+
+* {
+    background-color: lightcoral;
+}
+
+
+
+/* Selector de etiqueta */
+h1 {
+    background-color: lightcyan;
+}
+
+p {
+    background-color: lightgreen;
+}
+
+ul {
+    background-color: red;
+}
+
+li {
+    background-color: blue;
+}
