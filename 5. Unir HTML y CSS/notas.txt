@@ -1,0 +1,7 @@
+-se recomienda crear una carpeta para agregar los estilos css
+
+-también se puede agregar una etiqueta style en el html, pero no se recomienda para dar su mantenimiento
+
+-también se puede agregar css en linea, no se recomienda usar nunca, solo con javascript.
+
+- @import url(css/style.css);/* se usa para importar desde css */
