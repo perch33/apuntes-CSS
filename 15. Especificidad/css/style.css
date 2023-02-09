@@ -1,0 +1,66 @@
+/* 
+Especificidad "establece como de especifico es un selector para saber que estilo aplicar"
+
+"lo que hace el navegador es sumar los valores y el que tenga la suma mas alta gana "
+
+
+
+OJO!!!
+se recomienda usar siempre clases, para una buena practica
+
+
+
+
+
+etiquetas y Pseudoelementos  001
+
+clases, atributos y Pseudoclases 010
+
+Ids 100
+
+Estilos en linea 1000
+
+!Important gana a todo (Si lo usas es admites que no tienes idea de como funciona CSS y si lo usamos nos cargamos completamente la especificidad)
+
+
+
+cascada: funciona siempre que la especificidad sobre el elemento sea la misma
+
+
+
+link para saber si se tiene un buen CSS
+
+
+
+https://jonassebastianohlsson.com/specificity-graph/ 
+*/
+/* ejemplos de como estilizar el h1 */
+
+
+h1 {
+    background-color: red;
+}
+
+.title {
+    background-color: blue;
+}
+
+#title {
+    background-color: green;
+}
+
+h1.title {
+    background-color: yellow;
+}
+
+h1#title {
+    background-color: teal;
+}
+
+h1.title#title {
+    background-color: tomato;
+}
+
+h1.title {
+    background-color: red !important; /* si lo usamos nos cargamos completamente la especificidad */
+}
