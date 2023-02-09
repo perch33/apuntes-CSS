@@ -1,0 +1,18 @@
+/*
+Selector descendientes  =>
+(se le denomina seleccionar hijos)
+técnicamente no hay limite en cuantos a los descendiente que podemos usar, pero se recomienda  (seleccionar como máximo 2 elementos "2 niveles") 
+
+div .title-2 {
+
+    background-color: teal;
+
+} */
+
+
+/* seleccionamos  */
+div .title-2 {
+
+    background-color: teal;
+
+}
