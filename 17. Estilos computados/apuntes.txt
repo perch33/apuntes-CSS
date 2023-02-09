@@ -1,0 +1,5 @@
+-para acceder a los estilo computados podemos usar F12 desde el teclado o el mouse dando click en "inspeccionar"
+
+-el user agent stylesheet es la hoja de estilo por defecto del navegador
+
+-ante cualquier duda del estilo css aplicado se recomienda revisar el estilo dando click en inspeccionar y revisando las opciones "calculados o computed y styles "

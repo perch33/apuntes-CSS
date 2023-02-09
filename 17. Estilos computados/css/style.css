@@ -1,0 +1,46 @@
+/* 
+herencia "es la capacidad que tienen algunos elementos de heredar algunas propiedades de sus elementos contenedores (padres, hijos, abuelos, etc)"
+
+
+
+-inherit "para heredar valores"
+
+-initial "ignora los estilos por defecto y vuelve a tu estado por defecto"
+
+-El color se heredan
+-el tamaño de la fuente se heredan
+
+-todas las temas de colores y fuentes en la mayoría de ocasiones se heredan, y hay ciertas ocasiones en donde esto no pasa.
+
+
+-los enlaces no heredan las propiedades de su padre
+
+*/
+
+
+body {
+    background-color: #333;
+}
+
+.title {
+    color: cyan;
+    font-size: 10px;
+}
+
+.text {
+    color: green;
+}
+
+
+/* forzamos a la herencia (el enlace hereda el color) */
+.link {
+    color: inherit;
+}
+
+.list {
+    color: indianred;
+}
+
+.lis-item-extra {
+    color: initial;
+}
