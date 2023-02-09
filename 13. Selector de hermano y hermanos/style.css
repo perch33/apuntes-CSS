@@ -1,0 +1,50 @@
+/* 
+Selector hermano "+" y hermanos "~"
+
+Si el elemento esta dentro de otro elemento es hijo y si están al mismo nivel son hermanos se usa el sigo "+" ejem:
+
+Selector de Hermano siguiente => "+" 
+
+Selector de Hermano siguiente => "~"
+
+
+"+" con este símbolo solo podemos seleccionar al hermano que este inmediatamente después de ... el 
+
+"~" con este símbolo seleccionamos a los hermanos siguientes  después de ... el
+
+se puede usar etiquetas y clases, con el símbolo + solo se puede seleccionar el hermano que esta inmediatamente después
+
+.text + .title-2{
+
+     color: red;
+
+}
+
+
+
+hermanos
+
+selecciona todos los hermanos siguientes que sean "p"
+
+.text ~ p{
+
+     color: red;
+
+}
+*/
+
+
+/* seleccionamos al hermano siguiente de .text */
+
+.text+.title-2 {
+
+    color: red;
+
+}
+
+/* se seleccionan todos los hermanos siguientes que sean P */
+.text-2~p {
+
+    background-color: teal;
+
+}
