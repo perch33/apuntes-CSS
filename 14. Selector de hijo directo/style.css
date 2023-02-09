@@ -1,0 +1,21 @@
+/* selector de hijo directo ">"
+
+selecciona solo los elementos que sean hijos directos selecciona todos los "p" que estén dentro de container 
+
+.container>p {
+    color: red;
+}
+*/
+
+
+/* con el selector descendente nos selecciona todas las p que contiene el div con la clase container */
+/* .container p {
+    background-color: red;
+} */
+
+
+
+/* solo selecciona a los hijos directos que están en el mismo nivel */
+.container>p {
+    background-color: tomato;
+}
