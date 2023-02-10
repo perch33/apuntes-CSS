@@ -1,0 +1,7 @@
+-el padding sirve para separar el contenido (interno) ejem: separar el espacio de un texto interno
+
+-el margin nos permite separar una caja entre otras.
+
+-WIDTH => Ancho
+
+-HEIGHT => Alto
