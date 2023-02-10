@@ -1,0 +1,13 @@
+-se usa para usar los prefijos no compatibles con el navegador o no están implementados
+
+-los programas crean el código para que sean compatibles y no surjan errores.
+
+
+link para usar online
+
+-https://autoprefixer.github.io/
+
+
+link para usar el programa
+
+https://prepros.io/
