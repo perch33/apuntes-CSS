@@ -1,0 +1,7 @@
+-se usa Normalize.css para estandarizar los estilo en todos los navegadores
+
+-se debe de importar siempre los estilos de normalize primero (Es importante)
+
+link de descarga 
+
+https://necolas.github.io/normalize.css/

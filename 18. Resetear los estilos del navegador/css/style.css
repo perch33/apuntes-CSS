@@ -1,0 +1,8 @@
+/* 
+se debe de importar siempre los estilos de normalize primero (Es importante)
+*/
+
+body {
+    background-color: #333;
+    color: #fff;
+}
