@@ -1,0 +1,20 @@
+body {
+    background-color: #333;
+    color: #fff;
+}
+
+.block {
+    background-color: purple;
+    width: 200px;
+    height: 200px;
+
+}
+
+
+/* en elementos de linea no sirven las medidas de ancho y alto */
+.inline {
+    background-color: lightcoral;
+    color: inherit;
+    width: 200px;
+    height: 200px;
+}

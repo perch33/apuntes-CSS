@@ -1,0 +1,7 @@
+width = ancho
+
+height = largo
+
+los elementos en linea no tienen medidas y el tamaño no determina su contenido.
+
+solo se puede dar medida a los elementos de bloque
