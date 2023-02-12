@@ -1,0 +1,57 @@
+/* 
+"los elementos de linea solo tienen margenes horizontales, no verticales"
+
+"los elementos de bloque tienen los 4 lados del margen (se recomienda tener el ancho declarado)"
+
+Es la propiedad que nos permite generar espacio entre elementos.
+Es un shorthand (propiedad abreviada) que controla los 4 lados posibles a los que dar margenes.
+
+
+margin-top: margen superior
+
+margin-right: margen derecho
+
+margin-bottom: margen inferior
+
+margin-left: margen izquierdo 
+
+
+admite hasta 4 valores que van en el orden de las agujas del reloj.
+
+
+4 valores : margin: top right left bottom;
+
+3 valores : margin: top left/right bottom;
+
+2 valores : margin: top/bottom  left/right;
+
+1 valor : margin: top/bottom/left/right;
+*/
+
+body {
+    background-color: #333;
+    color: #fff;
+}
+
+.title {
+    margin-left: auto;/* no funciona porque ya es un elemento en bloque */
+    width: 300px;/* declarando el ancho si funciona, y se se va hacia la derecha*/
+    background-color: lightcoral;
+}
+
+.block {
+    background-color: purple;
+    width: 200px;
+    height: 200px;
+    /*  margin: 100px 50px 10px 200px; */
+    margin-right: auto;/* ele elemento se centra */
+    margin-left: auto;/* ele elemento se centra */
+}
+
+.inline {
+    background-color: lightcoral;
+    color: inherit;
+    /*  margin-bottom: 100px; */
+    /* no funciona en elemento en linea */
+    margin-left: 100px;
+}
