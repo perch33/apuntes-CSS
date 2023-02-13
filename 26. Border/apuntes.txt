@@ -1,0 +1,29 @@
+border-right-width: 10px;     borde derecho de 10px
+
+border-right-color: blue;     borde de color derecho de color azul
+
+
+
+
+
+listado de valores para style
+
+none  (quitar borde, sin borde)
+
+hidden  (oculta borde)
+
+dotted  (borde hecho con puntos)
+
+dashed  (borde con lineas)
+
+solid  (es que mas se utiliza)
+
+double (doble linea)
+
+groove (sombra superior izquierdo en 3d)
+
+ridge (lo mismo pero al revés)
+
+inset (pinta dos bordes con sombra)
+
+outset (lo mismo pero invirtiendo la sombra y la luz)
