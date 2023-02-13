@@ -1,8 +1,10 @@
  * {
 
     /* se pude utilizar pero implica que se tiene que ir elemento por elemento para restablecer los margenes */
+
     /* margin: 0;
-    padding: 0; */  /* se recomienda no usarlo */
+    padding: 0; */  /* se recomienda NO USARLO */
+    box-sizing: border-box;  /* SE RECOMIENDA USAR en el selector universal */
 
 } 
 
