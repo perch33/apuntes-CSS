@@ -10,13 +10,13 @@ es la propiedad que nos permite generar espacio entre elementos. Es un shorthand
 
 
 
-margin-top: margen superior
+margin-top: margen superior.
 
-margin-right: margen derecho
+margin-right: margen derecho.
 
-margin-bottom: margen inferior
+margin-bottom: margen inferior.
 
-margin-left: margen izquierdo
+margin-left: margen izquierdo.
 
 
 
