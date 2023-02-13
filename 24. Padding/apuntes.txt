@@ -1,0 +1,9 @@
+el padding nos permite generar espacios interno entre el borde y la caja, es un shorthand
+
+-funciona en elementos de linea y bloque
+
+
+
+-si el objetivo es separar los elementos de la caja se usa margin
+
+-si se quiere aumentar el tamaño de la caja y aumentar los bordes del contenido se usa padding
