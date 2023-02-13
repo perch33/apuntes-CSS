@@ -1,0 +1,43 @@
+ * {
+
+    /* se pude utilizar pero implica que se tiene que ir elemento por elemento para restablecer los margenes */
+    /* margin: 0;
+    padding: 0; */  /* se recomienda no usarlo */
+
+} 
+
+
+/* no tiene sentido poner padding: 0; porque el body no tiene padding */
+body {
+    background-color: #333;
+    color: #fff;
+    margin: 0; /* se recomienda poner margin 0 en el body */
+}
+
+
+/* ejemplo para hacer un menu */
+.header {
+    background-color: red;
+    height: 50px;
+}
+
+.title {
+    width: 300px;
+}
+
+.block {
+    background-color: purple;
+    width: 200px;
+    height: 200px;
+
+
+
+    /* margin-top: 100px;
+    margin: 0 auto; */
+    /* por cascada reescribe el margin top */
+
+
+    /* solo debemos usar estas opciones si solo queremos centrar un elemento en bloque */
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -1,0 +1,20 @@
+*{
+
+margin: 0;     se recomienda no usarlo
+
+padding:0;
+
+}
+
+
+
+
+
+
+
+
+//se recomienda usarlo para centrar elementos de bloque
+
+margin-left: auto;
+
+margin-right: auto;  
