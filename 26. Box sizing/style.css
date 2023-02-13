@@ -4,7 +4,7 @@ Es la propiedad que nos permite controlar el calculo que hace el navegador a la 
 
 *{
 
-box-sizing: border-box;  (se recomienda usar en el selector universal)
+box-sizing: border-box;  (se recomienda usar en el selector universal siempre)
 
 }
 
