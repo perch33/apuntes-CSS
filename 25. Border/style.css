@@ -1,0 +1,95 @@
+/* 
+border: es la propiedad que nos permite modificar el borde de la caja.
+
+es un shorthand (propiedad abreviada) que agrupa 3 propiedades
+
+
+
+border-width: ancho del borde
+
+     border-top-width
+
+     border-right-width     
+
+     border-bottom-width
+
+     border-left-width
+
+
+
+border-style: estilo del borde
+
+     border-top-style
+
+     border-right-style
+
+     border-bottom-style
+
+     border-left-style
+
+
+
+border-color: color del borde
+
+      border-top-color
+
+     border-right-color         
+
+     border-bottom-color
+
+     border-left-color
+
+*/
+
+body {
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+}
+
+.header {
+    background-color: red;
+    height: 50px;
+}
+
+
+.block {
+    background-color: purple;
+    width: 200px;
+    height: 200px;
+    padding-top: 100px;
+    /* padding-bottom: 100px; */
+    /* padding: 50px 20px 100px 70px; */
+
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.inline {
+    background-color: bisque;
+    color: inherit;
+    /* padding-right: 100px; */
+    /* el elemento de la caja se extiende 100 pixeles */
+}
+
+.buttons {
+    background-color: steelblue;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.button {
+    padding: 25px 50px;
+
+    /* son shorthand */
+    border: 10px solid red;
+    /* si lo fragmentamos por partes */
+    border-width: 10px;
+    border-style: solid;
+    border-color: red;
+
+    border-right-color: blue;
+    border-right-width: 5px;
+}
