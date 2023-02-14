@@ -1,0 +1,9 @@
+los margenes verticales colapsan, se recomienda usar margin-bottom: xpx;  para empujarlos abajo y poderlos separarlos (margenes verticales)
+
+
+
+<header>  se puede agregar overflow-hidden y solucionaría el problema, padding-top: 0.1px;  border-top: 0,1 px  solid lightcoral, estos trucos se pueden usar para solucionar el colapsado de margenes
+
+<h1>titulo</h1>   (presenta un colapso de margen en el top)  seleccionar el h1 u poner margin 0 se solucionaría, 
+
+</header>

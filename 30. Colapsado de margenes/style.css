@@ -1,0 +1,58 @@
+/* 
+los margenes verticales colapsan,(si nosotros tenemos un margin bottom para un elemento y un margin top para otro, y esos elementos con los márgenes se encuentran, se solapan.)
+
+se recomienda usar margin-bottom: xpx;  para empujarlos abajo y poderlos separarlos (margenes verticales) a cada elemento necesarios
+
+
+
+
+//colapsado de margenes entre padres a hijos
+
+<header>  
+
+ Soluciones
+    1- se puede agregar overflow-hidden (dentro de header) y solucionaría el problema, 
+    2- padding-top: 0.1px;(dentro de header)  
+    3- border-top: 0,1 px  solid lightcoral, estos trucos se pueden usar para solucionar el colapsado de margenes
+
+<h1>titulo</h1>   (presenta un colapso de margen en el top)  seleccionar el h1 u poner margin 0 se solucionaría, pero solo lo que se ha hecho es quitar los margenes al titulo
+
+</header>
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+}
+
+.header {
+    background-color: lightcoral;
+    height: 100px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.title {
+    margin-top: 30px;
+}
+
+.box-1,
+.box-2 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    background-color: lightcyan;
+    width: 300px;
+    height: 300px;
+}
+
+.box-2 {
+    margin-top: 20px;
+}
