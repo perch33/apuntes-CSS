@@ -1,0 +1,89 @@
+/* 
+text-align no sirve para centrar imágenes
+
+la imágenes tienen por defecto la propiedad display: inline-block;  y para centrar se tiene que agregar display: block; para centrar con margin-left:auto; margin-right:auto;   
+
+para centrar imágenes dentro de un div se pueden usar la propiedad text-align:center; siempre y cuando no se tenga agregado la propiedad display: block; en la imagen
+*/
+
+
+
+/* 
+para centrar el contenido de una caja se pude usar text-align siempre y cuando el contenido no tenga declarado el ancho.
+
+text-align solo va a centrar contenido no el contenedor.
+
+el link es un elemento de linea por lo tanto para centrar se tiene que agregar display: block;  para posteriormente agregar text-align: center; (funciona porque no tiene un ancho declarado, se declara el ancho para volverlo en una caja, y para centrar se tiene que agregar los margenes left-auto y right-auto)
+*/
+
+
+
+
+/* 
+text-align: es una propiedad que nos permite alinear horizontalmente el contenido de un elemento de bloque siempre que el contenido NO TENGA ANCHO DECLARADO.
+
+text-align centra contenidos de los elemento de bloque.
+
+ACEPTA 4 POSIBLES VALORES
+
+text-align:left; => alinea el contenido a la izquierda (por defecto)
+
+text-align:right; =>  alinea el contenido a la derecha
+
+text-align:center; => alinea el contenido al centro
+
+text-align:justify; => alinea el contenido de forma justificada. (no es recomendable hacerlo, intentar no usarlo)
+*/
+
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    background-color: #333;
+    color: #fff;
+}
+
+.text{
+    text-align: justify;
+}
+
+.box {
+    background-color: #666;
+    width: 100px; /* ancho del contendedor */
+    padding: 10px 0;
+    margin: 20px 0;
+    border: 2px solid lightcoral;
+    text-align: center; /* centramos el contenido */
+    /* centramos el contenedor (caja) */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.link{
+    color: #fff;
+    /* para centrar el enlace tiene que tener display block, si se le agrega inline-block no funciona */
+    display: block;
+    /* en cuanto se le agrega una medida de ancho el contenido se centra pero la caja no */
+    /* width: 200px; */
+    text-align: center; 
+    margin-bottom: 20px;
+}
+
+.img-container{
+    text-align: center;
+}
+
+.img{
+    /* siempre que se quiera centrar una imagen se tiene que poner display: block; */
+    /* display: block;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto; */
+    width: 200px;
+}
