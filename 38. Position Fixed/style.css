@@ -1,0 +1,38 @@
+/* 
+fixed: el elemento perderá sus medidas y su espacio reservado. si lo movemos usara el elemento html de referencia, y ademas se quedara fijo en esa posición aunque hagamos scroll
+*/
+
+/* 
+si el header pierde su tamaño superior se tiene que agregar el top:0 mas el ancho width: 100%.
+
+ademas si el body le hace falta margen superior o se muestra muy pegado  se le agrega la propiedad padding-top: 70px;
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #333;
+    color: #fff;
+
+    /* se agrega padding top debido a que el elemento pierde sus medidas y su espacio reservado */
+    padding-top: 50px;
+}
+
+.link {
+    position: fixed;
+    background-color: lightcoral;
+    width: 200px;
+}
+
+.header {
+    text-align: center;
+    padding: 25px 0;
+    background-color: lightskyblue;
+    color: orangered;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
