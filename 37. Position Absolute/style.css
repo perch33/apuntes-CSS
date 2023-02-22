@@ -1,0 +1,55 @@
+/* 
+absolute: el elemento perderá sus medidas y su espacio reservado. si lo movemos usara el elemento padre posicionado como referencia. si no tiene ninguno, usara el elemento html de referencia.
+*/
+
+/* 
+-si colocamos un elemento con position Absolute y no esta dentro de ningún contenedor posicionado su movimiento va a ser respecto a todo el HTML y se va a colocar en función del tamaño que tenga la web
+*/
+
+/* 
+si estas posicionando elementos de linea que sepas que no necesitas dar display: inline-block,  block,  solamente con position: absolute, ya automáticamente se le puede dar medida margenes y todo lo que se necesita.
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #333;
+}
+
+.box {
+    text-align: center;
+    width: 100px;
+    height: 100px;
+}
+
+.container {
+    width: 200px;
+    height: 200px;
+    background-color: lightskyblue;
+    position: relative;
+}
+
+.box-1 {
+    background-color: lightcoral;
+    position: absolute;
+    left: 100px;
+    bottom: 100px;
+}
+
+.box-2 {
+    background-color: lightgreen;
+    position: absolute;
+    left: 100px;
+    bottom: 100px;
+}
+
+.link {
+    /* a los elementos en linea también se les puede dar medidas solo con position absolute */
+    position: absolute;
+    background-color: lime;
+    width: 200px;
+    top: 50px;
+}
