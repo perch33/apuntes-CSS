@@ -1,0 +1,49 @@
+/* 
+la propiedad box-shadow se creo para añadir efectos de sombra a nuestra caja.
+
+en efecto lo que hace es crear un clon de la caja respetando la forma de su box-model (ancho, alto, redondez)
+
+la sintaxis de box-shadow se puede escribir de distintas formas según lo que queramos conseguir.
+
+los valores que le podemos poner son:
+
+    offset-x: desplazamiento en X (obligatorio)
+
+    offset-y: desplazamiento en Y (obligatorio)
+
+    blur-radius: desenfoque de la sombra
+
+    spread-radius: expansion de la sombra
+
+    color: el color de la sombra, si no lo especificamos lo heredara del elemento al que pertenece
+
+    inset: determina si la sombra sera interior o exterior
+*/
+
+
+
+/* 
+box-shadow: 5xp(eje X) 10px(eje Y) (si tiene valores negativos se van para arriba) 10px(blur) 20px(spread radius es como el padding de la sombra)
+
+box-shadow: 5xp(eje X) 10px(eje Y) 10px(blur) 20px(spread radius es como el padding de la sombra)  #fff (color;)  , (si tiene coma se puede agregar mas sombras de manera ilimitada y no ocupa espacio)
+
+box-shadow: inset (toda la sombra es de manera interna y los valores cambian)5xp(eje X) 10px(eje Y) 10px(blur) 20px(spread radius es como el padding de la sombra)  #fff (color;)  , (si tiene coma se puede agregar mas sombras de manera ilimitada y no ocupa espacio)
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* el color de las sombras se heredan de las letras, el color por defecto es negro */
+.box{
+    background-color: darkcyan;
+    width: 200px;
+    padding: 50px;
+    color: brown;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    box-shadow: 5px 5px  lightcoral, 10px 10px rgb(137, 73, 73) ;
+}
