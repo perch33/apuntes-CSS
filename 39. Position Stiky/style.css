@@ -1,0 +1,54 @@
+/* 
+sticky: es una mezcla de position relative y fixed. con este tipo de posicionamiento los valores top, left, bottom y right no sirven para mover el elemento, si no para indicarle en que punto pasara a tener un comportamiento de posicionamiento fixed, hasta llegar a ese punto se comportara somo si no tuviera posicionamiento, aunque si contara como posicionado si necesitáramos colocar otro elemento respecto a el (absolute).
+*/
+
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+body {
+    margin: 0;
+    background-color: #333;
+    color: #fff;
+}
+
+
+
+.header {
+    text-align: center;
+    padding: 25px 0;
+    background-color: lightskyblue;
+    color: orangered;
+    /*  position: sticky;
+    top: 0; */
+
+    /* si le agregamos el alto funciona el sticky porque recorre el alto del padre */
+    height: 200px;
+}
+
+
+/* la propiedad sticky solo funciona cuando tenemos declarado un overflow visible(por defecto) */
+
+
+/* cuando nosotros utilizamos position sticky, lo que hacemos es recorrer el alto del elemento que lo contiene (elemento padre)*/
+/* .menu {
+    position: sticky;
+    top: 0;
+} */
+
+.article-title {
+    position: sticky;
+    top: 0px;
+    background-color: #333;
+    margin: 0;
+
+}
