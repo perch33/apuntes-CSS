@@ -1,0 +1,44 @@
+/* 
+relative: el elemento mantendrá su posición y medidas en el flujo de renderizado y mantendrá su espacio reservado. si lo movemos lo hará usando su posición en el html como punto de referencia
+*/
+
+/* 
+
+
+.div1{
+
+position: relative; (primero se pone)
+
+left: 50px; (el elemento se mueve 50px desde la izquierda)
+
+top: 100px; (el elemento se mueve 100px desde la parte superior)
+
+}
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #333;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+}
+
+.box-1 {
+    background-color: lightcoral;
+    /* position: relative;
+    left: 100px;
+    top: 100px; */
+}
+
+.box-2 {
+    background-color: lightgreen;
+    position: relative;
+    top: 100px;
+}
