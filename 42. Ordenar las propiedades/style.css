@@ -1,0 +1,58 @@
+/* 
+Ordenar las propiedades es importante, no existen ninguna norma ni especificación sobre como hacerlo, pero la mayoría de expertos coinciden en los mismos puntos.
+
+    1 - Propiedades de posicionamiento
+    2 - propiedad de box model
+    3 - propiedad de texto
+    4 - propiedades visuales (colores, bordes, background...)
+    5 - El resto
+*/
+
+
+
+
+
+/* 
+Código de ejemplo 
+
+1- propiedades de posicionamiento(position)
+
+posicionamiento:relative;
+
+top:0;
+
+left: 0;
+
+2-propiedades del box model(box model)
+
+display:block;
+
+width:300px;
+
+height: 500px;
+
+padding:10px;
+
+margin:10px;
+
+overflow:hidden;
+
+3-propiedades de texto(text)
+
+font-size:16px;
+
+text-align:center;
+
+4-propiedades visuales(colores, bordes, background...)(visual)
+
+color: blue;
+
+border:2px solid red;
+
+border-radius:10px;
+
+5-el resto(propiedades que no encajan en ninguno)(varios)
+
+opacity:1;
+*/
+
