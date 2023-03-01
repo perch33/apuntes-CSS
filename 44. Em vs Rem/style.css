@@ -1,0 +1,50 @@
+/* 
+rem => corresponde a la medida de la "m" de la raíz del documento (html).
+
+    ejemplo: 16px => 1rem   se debe de utilizar siempre para tamaño de fuente sin excepción
+
+em => corresponde a la medida de la "m" del contexto donde nos encontremos
+
+    h1 => tamaño base es 2em(2x16)  toma el tamaño del font-size de body (se puede utilizar para dar tamaño a aun boton o cuadro padding:1em 2em, border-radius:0.5em)
+
+El estándar del tamaño de fuente por defecto en la raíz del documento es 16px, y no es recomendable modificarlo
+
+
+
+nota: tanto "em" como "rem" se calcula en base a la propiedad font-size (tamaño de fuente)
+
+
+
+Si la medida que establece tiene que crecer proporcionalmente al tamaño del texto, como puede
+
+ser en este ejemplo, utilizad siempre em.
+
+Y si la medida tiene que ser siempre la misma y relativa al tamaño de fuente de la raíz, tenéis que
+
+utilizar Rem.
+
+
+
+16px equivalen a los 12puntos del tamaño de la imprenta
+*/
+
+body {
+    background-color: #333;
+    color: lightcoral;
+}
+
+/* .title{
+    font-size: 2rem;
+} */
+
+
+
+
+
+.link{
+    background-color: lightcoral;
+    color: #333;
+    padding: 1em 2em;
+    border-radius: 0.5em;
+    font-size: 1rem;
+}
