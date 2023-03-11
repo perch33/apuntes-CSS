@@ -17,7 +17,7 @@ nota: tanto "em" como "rem" se calcula en base a la propiedad font-size (tamaño
 
 Si la medida que establece tiene que crecer proporcionalmente al tamaño del texto, como puede
 
-ser en este ejemplo, utilizad siempre em.
+ser en este ejemplo (del padding del boton), utilizad siempre em.
 
 Y si la medida tiene que ser siempre la misma y relativa al tamaño de fuente de la raíz, tenéis que
 
