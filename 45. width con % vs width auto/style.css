@@ -1,0 +1,37 @@
+/* 
+Esta se usa para dar medidas en función al tamaño del contenedor.
+
+La medida de texto del documento es de 16px, y no es recomendable MODIFICARLO.
+
+% = cuando usamos porcentaje usamos de referencia el tamaño del contenedor y el navegador calcula ese porcentaje. esto no ocurre cuando usamos transform.
+
+auto = cuando usamos auto le pedimos al navegador que calcule en función del espacio disponible.
+
+el uso de la medida % permite que el elemento tenga tamaño relativo al de la pantalla, y el uso de width: auto; permite que los elementos no colapsen.
+
+-es recomendable usar medidas con porcentajes cuando estamos hablando de responsive
+
+-si queremos que un el elemento se ajuste al tamaño de su ventana, es muy cómodo usar porcentajes y deja que sea el navegador el que calcule el porcentaje.
+
+*/
+
+body {
+    background-color: #333;
+    color: lightcoral;
+}
+
+.box {
+    width: auto;
+    margin: 0 50px;
+    /* sucede algo similar que el elemento hijo, el cuadro genera solo un margen en la izquierda cuando se le agrega, se recomienda agregar width= auto para que el navegador calcule el ancho y el cuadro crezca en su 100%*/
+    height: 250px;
+    background-color: lightgreen;
+}
+
+.box-children {
+    width: auto;
+    height: 25%;
+    margin-left: 100px;
+    /* el cuadro se separa cuando se le agrega, se recomienda agregar width= auto para que el navegador calcule el ancho */
+    background-color: lightseagreen;
+}
