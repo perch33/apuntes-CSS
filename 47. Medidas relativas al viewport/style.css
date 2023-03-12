@@ -1,0 +1,59 @@
+/* 
+viewport
+
+Es el area util donde se mostrara la pagina web. importante, tened en cuenta que es el area visible sin hacer scroll.
+
+podemos usar el viewport como medida de varias formas:
+
+vw => viewport Width, hace referencia al ancho del viewport.
+
+vh => viewport Height hace referencia al alto del viewport.
+
+vmax => utiliza el valor mas grande entre el ancho y el alto del viewport.
+
+vmin => utiliza el valor mas pequeño entre el ancho y el alto del viewport.
+
+
+
+1vw => 1% del ancho del viewport
+
+1vh => 1% del alto del alto del viewport
+
+1vmin => 1% del valor que sea mas pequeño del viewport
+
+1vmax => 1% del valor que sea mas grande del viewport
+*/
+
+html {
+    height: 300px;
+}
+
+body {
+    margin: 0;
+    background-color: #333;
+    color: lightcoral;
+
+}
+
+.header {
+    background-color: lightskyblue;
+    text-align: center;
+    /* height: 100vh; */
+    /* ocupa al 100% de la pantalla de lo visible */
+    /* width: 100vw; */
+    /* se recomienda no usar porque generar una barra de scroll, es mejor usar el % */
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+    background-color: lightgreen;
+}
+
+.box-children {
+    position: relative;
+    top: 0;
+    width: 50%;/* width: 50vw; ocupa el 50% de la pantalla visible, y se desborda */
+    height: 150px;
+    background-color: lightseagreen;
+}
