@@ -1,0 +1,77 @@
+/* 
+Limitadores de ancho y alto
+
+Cuando establecemos un width y/o un height son una medida que es relativa, es posible que queramos que se respete esa medida en todos los casos.
+
+Para ello tenemos propiedades que limitan esas medida:
+
+min-width: indica el ancho mínimo que puede alcanzar el elemento.
+
+max-width: indica el ancho máximo que puede alcanzar el elemento.
+
+min-height: indica el alto mínimo que puede alcanzar el elemento.
+
+max-heighth: indica el alto máximo que puede alcanzar el elemento.
+*/
+
+
+
+
+
+
+/* 
+para poner el footer siempre abajo se deben de agregar estos elementos.
+
+body{
+
+position:relative; //para acercarnos a la solución
+
+margin:0;
+
+min-height: 100vh;  //para que el el body tome la medida minima (este es un truco para que cuando necesitéis un elemento en la parte inferior de la pagina y nuestro contenido no rellene todo podáis utilizarlo pero no lo pongáis a lo loco en todos los sitios porque si no hace falta es absurdo ponerlo)
+
+}
+
+p{
+
+margin:0; //todo se sale de control y no sirve de nada
+
+}
+
+footer{
+
+position: absolute;
+
+bottom: 0;
+
+}
+*/
+
+html {
+    height: 300px;
+}
+
+body {
+    margin: 0;
+    background-color: #333;
+    color: lightcoral;
+}
+
+.box {
+    width: 100%;
+    height: 200px;
+    height: 60vh;
+    max-height: 300px;
+    min-height: 100px;
+    background-color: lightgreen;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0; /* para posicionar el footer abajo con pocos párrafos */
+    width: 100%;
+    padding: 1rem 0;
+    color: white;
+    text-align: center;
+    background-color: lightseagreen;
+}
