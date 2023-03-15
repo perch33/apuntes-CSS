@@ -1,0 +1,22 @@
+/* 
+CurrentColor: es una palabra clave que se puede usar en lugar de cualquier valor de color y usara el valor ya sea establecido o heredado en la propiedad color
+*/
+
+/* 
+cuando se usa currentColor lo que estamos haciendo es coger el color declarado que esta mas cerca a currenColor, si el propio elemento tiene un color declarado usara eso, si no  cogerá el del padre, sino seguirá subiendo hasta que encuentre una propiedad color, sino tuviéramos uno declarado tomara el del navegador que es de color negro
+*/
+
+body {
+    background-color: mediumorchid;
+    color: #333;
+}
+
+.main {
+    background-color: currentColor; /* toma el color heredado del body (propiedad color) */
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: peru;
+}
