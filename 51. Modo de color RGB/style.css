@@ -1,0 +1,33 @@
+/* 
+RGB
+
+En el modo RGB tenemos tres canales (red, green, blue) y tenemos 8 bits de color por canal, (cada bit tiene dos posibles valores 0 y 1) lo que significa que tenemos 2^8 posibles valores, que van desde 0 hasta 255.
+
+Esto nos da un total de 255*255*255=16.581.375 colores.
+
+su sintaxis es rgb(R,G,B)
+
+si ponemos todos los canales a 0 tendremos un negro puro y si los ponemos a 255 tendremos un blanco.
+
+para movernos por la gama de grises debemos poner los 3 canales con el mismo valor, si ponemos los 3 canales a 128 tendremos el gris puro.
+
+El modo RGB nos da la opción de utilizar un cuarto canal que correspondería al canal alpha, es decir, la transparencia , y su valor va de 0 a 1. tenemos dos sintaxis para utilizar el canal alpha.
+
+rgba(R,G,B,A)
+
+rgb(R G B /A)
+*/
+
+body {
+    background-color: mediumorchid;
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+    background-color: lightcoral;
+    /* background-color: rgb(255, 255, 0);
+    background-color: rgba(185, 19, 19, 0.1);
+    background-color: rgb(0 0 0 /0.3); */
+    box-shadow: 5px 5px 10px rgb( 0 0 0 / 0.5);
+}
