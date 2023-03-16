@@ -1,0 +1,72 @@
+/* 
+HSL / HSLA
+
+El modo de color hsl es el mas intuitivo para los humanos. Su nombre viene de las siglas Hue (tono) Saturation (Saturación) y lightness (luminancia)
+
+el primer valor es el angulo en el circulo cromático donde 0 y 360 sera el color rojo. hay ciertos valores que os pueden servir como referencia para relacionar mejor los colores con sus ángulos.
+
+0 = rojo
+
+60 = amarillo
+
+120 = verde
+
+180 = cyan
+
+240 = azul
+
+300 = magenta
+
+El segundo valor es la saturación o intensidad del color.
+
+0% = gris
+
+100% = color puro
+
+El tercer valor es la luminosidad del color
+
+0% = negro, nada de luz
+
+100% = blanco, luz maxima
+
+nota: Es importante que aunque el valor de saturación o luminancia sea 0 hay que poner 0% si no, no funcionara
+*/
+
+/* 
+El modo HSL también admite transparencia y su sintaxis es la misma que la del modo RGB. Tenemos dos sintaxis disponibles.
+
+hsla(h,s,l,a)
+
+hsl(h s l / a)
+
+en ambos casos el valor alpha va de 0 a 1
+
+Existen otros cuatro modos de color en las que esta trabajando que serian CMYK (Cyan, Magenta, Yellow y Black) HWB (Hue, Whiteness, Blackness), Lab(Lightness, distance a, distance b) y lch(Lightness, chroma, hue).
+*/
+
+/* 
+paginas para escoger bien los colores.
+
+https://brandcolors.net/
+
+https://htmlcolorcodes.com/es/
+
+https://colorhunt.co/
+
+https://color.adobe.com/es/create/color-wheel
+*/
+
+body {
+    background-color: mediumorchid;
+    background-color: hsl(0, 100%, 50%);
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: lightcoral;
+    /* background-color: rgb(255, 255, 0);
+    background-color: rgba(185, 19, 19, 0.1);
+    background-color: rgb(0 0 0 /0.3); */
+    box-shadow: 5px 5px 10px hsl(180 50% 0% / 0.5);
+}
