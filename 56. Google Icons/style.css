@@ -1,0 +1,19 @@
+/* 
+Nota: SI VAS A USAR GRAN CANTIDAD DE ICONOS EN TU WEB COMPENSA USAR LA LIBRERÍA REMOTA
+
+Si solo usaras unos pocos es mejor descargarlos en formato SVG y utilizarlos como imágenes
+*/
+
+
+body {
+    background-color: #333;
+    color: aliceblue;
+    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+}
+
+.icon{
+    font-size: 3rem;
+    color: red;
+}
