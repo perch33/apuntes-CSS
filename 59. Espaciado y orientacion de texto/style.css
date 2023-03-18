@@ -1,0 +1,57 @@
+/* 
+Espaciado en fuentes y texto
+
+letter-spacing: establece la separación entre caracteres, se puede establecer en cualquier medida valida para CSS
+
+word-spacing: establece la separación entre palabras, se puede establecer en cualquier medida valida para CSS
+
+line-height: establece el alto de cada linea, se puede dar una medida concreta o se puede poner un numero que se multiplicara por el font-size del texto al que se lo estemos multiplicando.
+
+Orientación del texto
+
+writing-mode: establece la dirección del texto.
+*/
+
+
+
+/* 
+para que el texto quede en vertical
+
+word-break: break-all;  (rompe palabras, se usa para poner las letras en vertical)
+
+se acompaña de width para que las letras se unan de forma vertical
+
+width: 10px;
+*/
+/* 
+paginas de confianza para ver la documentación de css
+
+https://developer.mozilla.org/en-US/
+*/
+
+body {
+    background-color: #333;
+    color: aliceblue;
+    font-family: "Mano alzada";
+
+}
+
+.icon {
+    font-size: 3rem;
+    color: lime;
+    cursor: pointer;
+}
+
+.text{
+    /* letter-spacing: 10px; */
+    /* word-spacing: 10px; */
+   /*  writing-mode: vertical-lr; */
+   word-break: break-all;
+   width: 10px;
+}
+
+.word-container{
+    background-color: lightcoral;
+    height: 200px;
+    text-align: center;
+}
