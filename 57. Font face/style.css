@@ -1,0 +1,53 @@
+/* 
+Formato para fuentes
+true type font (ttf) - fue el primer formato estándar.
+
+open true type font (otf) - facilita o implementa la creación de las curvas.
+
+web open font format (woff) (woff2) - es un formato mucho mas ligero y mejora el rendimiento. funciona a traves de metadatos. Woff tiene soporte total y WOFF2 no funciona en internet explorer.
+
+Scalable Vector graphics (SVG) - para efectos y animaciones sobre el texto, no es recomendable usarlo en el texto genérico de la web, tiene muchos problemas.
+
+Embedded Open Type (EOT) - primer formato digital propuesta para sitios web y es comprimido. se quedo como una propuesta pero no paso a ser un estándar.
+
+Regla @font-face
+
+Esta es la forma de utilizar fuentes que tenemos descargadas y que no traemos de un servidor remoto, cuando usamos google fonts, esto es lo que esta pasando por detrás.
+*/
+/* 
+La sintaxis es:
+
+@font-face{
+
+    font-family:nombre de la familia, se lo asignamos nosotros;
+
+        src: aquí pondremos dos tipos de valores.
+
+        local() - pondremos el nombre de la fuente para buscarlo en el ordenador del usuario, de esa forma podremos evitar descargarla.
+
+        url() - si no encontramos esa fuente procedemos a descargarla.
+
+        existe otro valor, menos usada que es format
+
+        format() - este valor lo pasaremos de forma opcional si queremos ser mas específicos con la fuente que vamos a buscar o descargar, si no lo ponemos cogerá el primer formato soportado, si lo ponemos solo usara el que hemos establecido, y si no lo encuentra no pasa nada.
+
+}
+
+podemos añadirle mas valores como font-style, font-weight y font-display(experimental), pero esos son opcionales.
+*/
+
+@font-face {
+    font-family: "Mano alzada";
+    src: url('fonts/SCRIPTIN.ttf');
+}
+
+body {
+    background-color: #333;
+    color: aliceblue;
+    font-family: "Mano alzada";
+}
+
+.icon {
+    font-size: 3rem;
+    color: red;
+}
