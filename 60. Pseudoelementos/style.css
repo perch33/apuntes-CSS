@@ -1,0 +1,66 @@
+/* 
+Pseudoelementos
+
+Se utilizan para dar estilo a partes especificas de un elemento.
+
+La sintaxis es selector::pseudo-element{ estilos }
+
+
+
+Existen 5 Pseudoelementos
+
+
+
+//para que funciones si o si tiene que ser de bloque o inline-block
+
+::first-line (elementos de bloque e inline-block) primera linea
+
+::first-letter (elementos de bloque e inline-block)
+
+::selection (da estilo al elemento seleccionado con el mouse y retirado de la especificación)
+
+
+
+::before (antes del elemento) (si queremos dibujar algo con ello debemos de poner display block)
+
+::after (después del elemento) ambos son elementos que no existen en el html y por consecuencia no existen en el DOM
+
+(la propiedad content es obligatoria
+
+son elementos de linea por defecto
+
+son hijos del elemento al que pertenecen) ejem:
+
+.text::before{
+
+  content:"//aquí ponemos lo que queremos que escriba o lo dejamos vació";
+
+}
+*/
+
+.title::first-letter {
+  color: red;
+  font-size: 2em;
+}
+
+.text::first-line {
+  color: blue;
+}
+.text::selection {
+  background-color: lime;
+}
+.inline {
+  display: block;
+}
+.inline::first-letter {
+  color: red;
+  font-size: 2em;
+}
+.dolar::before,
+.dolar::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: red;
+}
